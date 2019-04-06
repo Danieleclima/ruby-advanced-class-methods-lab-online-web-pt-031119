@@ -52,7 +52,9 @@ end
     end
   end
 
+def Song.new_from_filename (file)
   
+end
 
 
 
