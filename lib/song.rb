@@ -53,7 +53,7 @@ end
   end
 
 def Song.new_from_filename (file)
-  file.delete"mp3"
+  file.delete!".mp3"
   binding.pry
   array = file.split("-")
   song = self.new
