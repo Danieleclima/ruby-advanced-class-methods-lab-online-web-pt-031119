@@ -67,5 +67,6 @@ def Song.create_from_filename (file)
 end
 
 def Song.destroy_all
+  @@all.clear
 end
 end
