@@ -53,7 +53,8 @@ end
   end
 
 def Song.new_from_filename (file)
-  array = file.delete"mp3".split("-")
+  file.delete"mp3"
+  array = file.split("-")
   song = self.new
   song.name = array[1]
   song.artist_name = array[0]
