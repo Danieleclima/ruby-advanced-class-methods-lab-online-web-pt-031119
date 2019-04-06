@@ -55,9 +55,7 @@ end
 def Song.new_from_filename (file)
   array = file.split("-")
   song = self.new
-  binding.pry
   song.name = array[0]
-  binding.pry
   song.artist_name = array[1]
 end
 
