@@ -54,7 +54,7 @@ end
 
 def Song.new_from_filename (file)
   lenght = file.size
-  file [lenght -3, lenght] = ""
+  file [lenght -4, lenght] = ""
   array = file.split("-")
   song = self.new
   song.name = array[1]
