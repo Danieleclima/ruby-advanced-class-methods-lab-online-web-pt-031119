@@ -38,10 +38,17 @@ class Song
 end
 
   def Song.find_or_create_by_name (song)
-      if Song.find_by_name(song).name == song
-        song
-      else
+      find = Song.find_by_name (song)
+      if find.nil?
         Song.create_by_name (song)
+      else
+        find
       end
 end
+
+  def Song.alphabetical
+    @@all.sort_by do |song|
+      song.name
+    end
+  end
 end
