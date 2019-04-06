@@ -66,5 +66,6 @@ def Song.create_from_filename (file)
   @@all << Song.new_from_filename(file)
 end
 
-
+def Song.destroy_all
+end
 end
