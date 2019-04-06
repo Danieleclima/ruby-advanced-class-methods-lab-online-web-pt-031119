@@ -56,14 +56,9 @@ def Song.new_from_filename (file)
   array = file.split("-")
   song = self.new
   song.name = array[1]
-  song.artist_name = array[0]
+  song.artist_name = array[0].delete("mp3")
   song
 end
-
-
-
-
-
 
 
 
